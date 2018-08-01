@@ -5,11 +5,9 @@ EXPANDED SOLUTION BELOW
 -------------------
 # Archery - Python 2.7.3
 
-'''
-n: the total number of contestants in the IAO (including you)
-a: your rank on just the first day (between 1 and n)
-b: your rank on just the second day (between 1 and n)
-'''
+# n: the total number of contestants in the IAO (including you)
+# a: your rank on just the first day (between 1 and n)
+# b: your rank on just the second day (between 1 and n)
 
 # Read input
 input = open('archin.txt', 'r')
