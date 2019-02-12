@@ -1,4 +1,6 @@
 # Coding Competitions
+## These are not intended to be used for cheating. Only use them if you are stuck or need some hints.
+
 
 AIO/FARIO/AIC/"Starter Problems"
 
