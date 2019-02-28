@@ -1,6 +1,6 @@
 
 #include <bits/stdc++.h> // get all of the libraries you will need.
-
+using namespace std;
 int main() {
   // Open files
   FILE * inp = fopen("fileName1.txt","r");
