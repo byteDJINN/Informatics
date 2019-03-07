@@ -10,4 +10,8 @@ CCC/Mock CCC
 
 The website with these training questions is: https://dmoj.ca/.
 
+Languages
+
+These answers are written in a few different languages: C++11, Python 2 (not any more) and Python 3. However I am trying to move to doing them all in C++ rather than Python, since it is simply better.
+
 
