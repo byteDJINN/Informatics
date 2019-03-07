@@ -1,4 +1,4 @@
-# Coding Competitions
+# Informatics Answers
 ## These are not intended to be used for cheating. These are just *my* solutions... 
 
 
