@@ -1,30 +1,18 @@
-#include <iostream>
-#include <fstream>
+#include <bits/stdc++.h>
 using namespace std;
 
-int main(int argc, const char * argv[]) {
-    ifstream in("manin.txt");
-    ofstream out("manout.txt");
-    int nums[4];
-    int c;
-    c = 0;
-    while (in) {
-        in >> nums[c];
-        c += 1;
+int main() {
+    FILE * inp = fopen("manin.txt","r");
+    FILE * out = fopen("manout.txt","w");
+    int a,b,c,d;
+    fscanf(inp, "%d %d %d %d",&a,&b,&c,&d);
+    int pos1 = a-c;
+    int pos2 = a+c;
+    if (b - d == pos1 || b+d==pos1) {
+        fprintf(out,"%d",pos1);
     }
-    if (nums[0] - nums[2] == nums[1] - nums[3]) {
-        out << nums[0] - nums[2];
+    else if (b - d == pos2 || b+d == pos2) {
+        fprintf(out,"%d",pos2);
     }
-    else if (nums[0] + nums[2] == nums[1] - nums[3]) {
-        out << nums[0] + nums[2];
-    }
-    else if (nums[0] - nums[2] == nums[1] + nums[3]) {
-        out << nums[0] - nums[2];
-    }
-    else if (nums[0] + nums[2] == nums[1] + nums[3]) {
-        out << nums[0] + nums[2];
-    }
-
     
-    return 0;
 }
