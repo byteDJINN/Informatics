@@ -2,39 +2,32 @@
 using namespace std;
 
 int main() {
-    FILE * inFile = fopen("cavalryin.txt","r");
-    FILE * outFile = fopen("cavalryout.txt","w");
+    FILE * inp = fopen("cavalryin.txt","r");
+    FILE * out = fopen("cavalryout.txt","w");
     int n;
-    fscanf(inFile,"%d",&n);
-    map<int,int> knights;
+    fscanf(inp,"%d",&n);
+    vector<int> knights(n+1,0);
     int temp;
-    for (int i = 0; i < n; i++) {
-        fscanf(inFile,"%d",&temp);
-        if (knights.count(temp)==0) {
-            knights[temp] = 1;
-        } 
-        else {
-            knights[temp] += 1;
-        }
+    for (int i=0;i<n;i++) {
+        fscanf(inp,"%d",&temp);
+        knights[temp] ++;
+        //printf("%d %d\n",temp,knights[temp]);
     }
-    bool answer = 1;
-    map<int,int>::iterator it;
-    for (it = knights.begin(); it != knights.end(); it++) {
-        if (it->second % it->first != 0) {
+    int c = 0;
+    int answer = 1;
+    for (vector<int>::iterator it=knights.begin();it!=knights.end();it++) {
+        //printf("%d\n",*it);
+        if (*it != 0 && *it % c != 0) {
             answer = 0;
             break;
         }
+
+        c++;
     }
-    if (answer) {
-        fprintf(outFile,"YES");
+    if (answer==1) {
+        fprintf(out,"YES");
     }
     else {
-        fprintf(outFile,"NO");
+        fprintf(out,"NO");
     }
-    fclose(inFile);
-    fclose(outFile);
-    return 0;
-    
-
-    
 }
