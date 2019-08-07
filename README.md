@@ -1,5 +1,6 @@
 # Informatics Answers
 ## These are not intended to be used for cheating. These are just *my* solutions... 
+### What you do with these solutions is not *my* responsibility xD
 
 
 AIO/FARIO/AIC/Starter Problems
