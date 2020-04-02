@@ -1,15 +1,20 @@
 # Informatics Answers
 ## These are not intended to be used for cheating. These are just *my* solutions... 
-### What you do with these solutions is not *my* responsibility xD
+### What you do with these solutions is not *my* responsibility :P
 
 
-AIO/FARIO/AIC/Starter Problems
+##### AIO/FARIO/AIC/Starter Problems
 
-The website with these training questions is: https://orac.amt.edu.au/.
+https://orac.amt.edu.au/.
 
-CCC/Mock CCC
+##### CCC/Mock CCC
 
-The website with these training questions is: https://dmoj.ca/.
+https://dmoj.ca/.
+
+##### USACO
+
+http://www.usaco.org/
+
 
 Languages
 
